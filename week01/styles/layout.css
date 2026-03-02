@@ -1,0 +1,118 @@
+* { 
+    box-sizing: border-box; 
+    }
+
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #222; 
+    }
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 300px; 
+  grid-template-rows: auto 1fr auto; 
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  min-height: 100vh;
+  gap: 0;
+}
+
+header { 
+    grid-area: header; 
+    background: #333; 
+    color: #fff; 
+    padding: 1rem; 
+    font-size: 12px;
+    }
+    
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; /* keep vertical padding on .site-nav */
+    display: flex;        /* faz os itens ficarem em linha */
+    justify-content: space-between; /* preenche a largura da tarja */
+    align-items: center;
+    width: 100%;
+}
+
+.site-nav li { margin: 0; }
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+} 
+
+main { grid-area: main; 
+    background: #d9d9d9; 
+    padding: 1rem; 
+    color: #000; 
+    }
+
+main p.aside, main > p { 
+    grid-area: aside; 
+    margin: 0; 
+    padding: 1rem; 
+    background: #fff; 
+    }
+
+.site-nav{
+    background-color: black;
+    padding: 1rem;
+    }
+
+.site-aside { 
+    grid-area: aside; 
+    padding: 1rem; 
+    background:#fff; 
+}
+
+footer { 
+    grid-area: footer; 
+    background: #333; 
+    color: #fff; 
+    padding: 2rem; 
+    text-align: center; 
+}
+
+header nav, header .nav { 
+    margin-top: 0.5rem; 
+    }
+header .nav p { 
+    display:inline-block; 
+    margin-right:1rem; 
+    color:#fff; 
+    }
+
+
+/* :root
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+
+}
+
+header h1 {
+    background-color: gray;
+}
+
+header p {
+    background-color: black;   
+}
+
+main .main-content {
+    background-color: lightgray;
+    height: 200px;
+}
+
+main {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+} */
