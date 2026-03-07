@@ -71,7 +71,7 @@ main section {
   margin-bottom: 2rem;
 }
 
-main section h1 {
+main section h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -90,16 +90,19 @@ main section li {
 }
 
 main .main-content {
-    display: flex;
-    gap: 1rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    align-items: stretch;
+  display: flex;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 
 main .main-content > section {
   margin-bottom: 0;
+  flex: 1 1 320px;
+  min-width: 280px;
 }
 
 main section.about-me {
@@ -118,10 +121,14 @@ main section.web-dev-resources {
   flex-direction: column;
 }
 
-main div h1{
+main div h2 {
     background-color: #7fffd4;
     width: 100%;
     padding: 0.5rem;
+    text-align: center;
+}
+
+.city-title {
     text-align: center;
 }
 
@@ -131,3 +138,28 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+.first-part {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.second-part {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.profile-pic,
+.brazil-flag {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
