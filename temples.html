@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Picture album showing Temples with a responsive design layout.">
+    <meta name="author" content="Gustavo Fragas Cunha">
+    <title>Temple Album</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" class="active">Home</a>
+            <a href="#" title="Old">Old</a>
+            <a href="#" title="New">New</a>
+            <a href="#" title="Large">Large</a>
+            <a href="#" title="Small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        
+        <div class="res-grid">
+            <figure>
+                <img src="img/Templo%20de%20Belém%20Brasil.jpg" alt="Templo de Belem Brasil" width="400" height="250" loading="lazy">
+                <figcaption>Belém, Brasil</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/Templo%20de%20Brasília%20Brasil.jpg" alt="Brasilia Temple" width="400" height="250" loading="lazy">
+                <figcaption>Brasília, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20de%20Campinas%20Brasil.jpg" alt="Templo de Campinas" width="400" height="250" loading="lazy">
+                <figcaption>Campinas, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20de%20Curitiba%20Brasil.jpg" alt="Temple in Curitiba" width="400" height="250" loading="lazy">
+                <figcaption>Curitiba, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20de%20Fortaleza%20Brasil.jpg" alt="Fortaleza Brazil Temple" width="400" height="250" loading="lazy">
+                <figcaption>Fortaleza, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20de%20Manaus%20Brasil.jpg" alt="Templo de Manaus" width="400" height="250" loading="lazy">
+                <figcaption>Manaus, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20de%20Porto%20Alegre%20Brasil.jpg" alt="Porto Alegre Temple" width="400" height="250" loading="lazy">
+                <figcaption> Porto Alegre, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20de%20São%20Paulo%20Brasil.jpg" alt="Sao Paulo Temple" width="400" height="250" loading="lazy">
+                <figcaption>São Paulo, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Templo%20do%20Rio%20de%20Janeiro%20Brasil.jpg" alt="Rio de Janeiro temple" width="400" height="250" loading="lazy">
+                <figcaption>Rio de Janeiro, Brasil</figcaption>
+            </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Gustavo Fragas Cunha - Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
