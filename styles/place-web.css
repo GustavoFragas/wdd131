@@ -38,8 +38,12 @@ header h1 {
 main {
     flex: 1;
     position: relative;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.hero {
+    display: block;
     width: 100%;
 }
 
@@ -55,6 +59,7 @@ main {
     object-fit: cover;
 }
 
+/* Base styles / Mobile First */
 .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -66,7 +71,7 @@ main {
     background-color: white;
     background: var(--card-bg);
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     overflow: hidden;
 }
 
@@ -77,7 +82,7 @@ main {
     text-align: center;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
-    position: relative;
+    margin: 0;
 }
 
 .card-inner {
@@ -106,13 +111,34 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: auto;
+    position: relative;
+    z-index: 10;
 }
 
 footer p {
     margin: 5px 0;
 }
 
+/* Wider view / Desktop */
 @media (min-width: 600px) {
+    main {
+        display: block;
+    }
+
+    .hero, .hero picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; 
+    }
+
     .content-wrapper {
         position: absolute;
         top: 0;
@@ -121,13 +147,11 @@ footer p {
         height: 100%;
         padding: 40px;
         display: block;
-    }
-
-    .hero picture img {
-        height: 600px;
+        pointer-events: none;
     }
 
     .card {
+        pointer-events: auto;
         position: absolute;
         width: 300px;
         background: var(--card-bg);
@@ -148,7 +172,7 @@ footer p {
     }
 
     .card.weather h2::after {
-        content: " ⛅";
+        content: ' ⛅';
         font-size: 1.2em;
         margin-left: 10px;
     }
