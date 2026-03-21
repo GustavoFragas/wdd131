@@ -39,23 +39,15 @@ main {
     flex: 1;
     position: relative;
     width: 100%;
-    margin: 0 auto;
 }
 
-.hero {
-    display: block;
-    width: 100%;
-}
-
-.hero picture {
+.hero, .hero picture, .hero picture img {
     display: block;
     width: 100%;
 }
 
 .hero picture img {
-    width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
 }
 
@@ -147,11 +139,9 @@ footer p {
         height: 100%;
         padding: 40px;
         display: block;
-        pointer-events: none;
     }
 
     .card {
-        pointer-events: auto;
         position: absolute;
         width: 300px;
         background: var(--card-bg);
