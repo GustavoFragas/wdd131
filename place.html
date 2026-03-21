@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 3 Assignment - Place Page with responsive design layout.">
+    <meta name="author" content="Gustavo Fragas Cunha">
+
+    <title>Country Page</title>
+
+    <link rel="stylesheet" href="styles/place-web.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/brazil-soccerteam-flag.webp">
+                <img src="images/brazilflag-w03.webp" alt="Brazil Flag Hero" class="flag" width="400" height="300" loading="lazy">
+            </picture>
+        </div>
+
+        <div class="content-wrapper">
+            <section class="card data">
+                <h2>Data</h2>
+                <div class="card-inner">
+                    <p><strong>Area:</strong> 8,515,767 sq km</p>
+                    <p><strong>Population:</strong> 214,326,223</p>
+                    <p><strong>Capital:</strong> Brasília</p>
+                    <p><strong>Languages:</strong> Portuguese</p>
+                    <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+                    <p><strong>Time Zone:</strong> UTC-2 to -5</p>
+                    <p><strong>Calling Code:</strong> +55</p>
+                    <p><strong>Internet TLD:</strong> .br</p>
+                </div>
+            </section>
+            
+            <section class="card weather">
+                <h2>Weather</h2>
+                <div class="weather-icon-container">
+                    <img src="images/weather.svg" alt="Sunny" class="weather-icon-mobile" width="48" height="48">
+                </div>
+                <div class="card-inner">
+                    <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>@<span id="currentyear"></span> - Gustavo Fragas Cunha - Brazil</p> 
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
