@@ -73,8 +73,7 @@ header h1 {
     cursor: pointer;
 }
 
-.navigation button:hover,
-.navigation button.active {
+.navigation button:hover {
     background-color: rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }

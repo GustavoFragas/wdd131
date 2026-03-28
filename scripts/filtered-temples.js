@@ -132,9 +132,22 @@ const largeButton = document.getElementById("large");
 const smallButton = document.getElementById("small");
 const mainTitle = document.querySelector("main h2");
 
+// array com todos os botoes pra facilitar tirar e colocar a classe "active"
+const navButtons = [homeButton, oldButton, newButton, largeButton, smallButton];
+
+function setActiveButton(clickedButton) {
+    // 1. Remove a class "active" de TODOS os botoes primeiro
+    for (let i = 0; i < navButtons.length; i++) {
+        navButtons[i].classList.remove("active");
+    }
+    // 2. Adiciona a class "active" apenas no botao que foi clicado agora
+    clickedButton.classList.add("active");
+}
+
 homeButton.addEventListener("click", function() {
     createTempleCards(temples);
     mainTitle.textContent = "Home";
+    setActiveButton(homeButton);
 });
 
 oldButton.addEventListener("click", function() {
@@ -154,6 +167,7 @@ oldButton.addEventListener("click", function() {
     });
     createTempleCards(oldTemples);
     mainTitle.textContent = "Old";
+    setActiveButton(oldButton);
 });
 
 newButton.addEventListener("click", function() {
@@ -173,6 +187,7 @@ newButton.addEventListener("click", function() {
     });
     createTempleCards(newTemples);
     mainTitle.textContent = "New";
+    setActiveButton(newButton);
 });
 
 largeButton.addEventListener("click", function() {
@@ -181,6 +196,7 @@ largeButton.addEventListener("click", function() {
     });
     createTempleCards(largeTemples);
     mainTitle.textContent = "Large";
+    setActiveButton(largeButton);
 });
 
 smallButton.addEventListener("click", function() {
@@ -189,5 +205,6 @@ smallButton.addEventListener("click", function() {
     });
     createTempleCards(smallTemples);
     mainTitle.textContent = "Small";
+    setActiveButton(smallButton);
 });
 
