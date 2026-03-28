@@ -1,0 +1,56 @@
+/* Define the animation */
+@keyframes fadeInFromBlack {
+  /* At the start, the image is fully transparent, revealing the black background */
+  from {
+    opacity: 0;
+  }
+  /* At the end, the image is fully opaque */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the container with a black background */
+img {
+  display: inline-block; /* Or use block and set width/height as needed */
+  background-color: #000; /* Black background */
+  position: relative; /* Needed if you use an overlay method */
+  /* Set a fixed size for the container if your images vary in size */
+  width: 200px;
+  height: 150px;
+}
+
+/* Style the image and apply the animation */
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top; /* Prevents unwanted space below inline-block images */
+  /* Apply the animation */
+  animation-name: fadeInFromBlack;
+  animation-duration: 2s; /* Duration of the fade effect */
+  animation-timing-function: ease-in; /* Easing function */
+  animation-fill-mode: forwards; /* Ensures the image stays opaque after the animation */
+  /* Initially set opacity to 0 to ensure the animation starts correctly */
+  opacity: 0;
+}
+
+/* Optional: Add delays to stagger the animation for each image */
+img:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+img:nth-of-type(2) {
+  animation-delay: 1s;
+}
+/* Add more :nth-of-type rules for subsequent images with increasing delays */
+img:nth-of-type(3) {
+  animation-delay: 1.5s;
+}   
+img:nth-of-type(4) {
+  animation-delay: 2s;
+}
+img:nth-of-type(5) {
+  animation-delay: 2.5s;
+}
+img:nth-of-type(6) {
+  animation-delay: 10s;
+}
