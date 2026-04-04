@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form for WDD 131">
+    <meta name="author" content="Gustavo Fragas Cunha">
+    <title>Product Review</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/form.css">
+    
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <label>
+                        ☆
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </label>
+                    <label>
+                        ☆☆
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </label>
+                    <label>
+                        ☆☆☆
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </label>
+                    <label>
+                        ☆☆☆☆
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </label>
+                    <label>
+                        ☆☆☆☆☆
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product? <br><span class="subtitle">(Check all that apply)</span></legend>
+                <label>
+                    <input type="checkbox" id="feat-durability" name="feature" value="durability">
+                    Durability
+                </label>
+                <label>
+                    <input type="checkbox" id="feat-ease" name="feature" value="ease">
+                    Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" id="feat-performance" name="feature" value="performance">
+                    Performance
+                </label>
+                <label>
+                    <input type="checkbox" id="feat-design" name="feature" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="written-review" name="written-review" rows="5"></textarea>
+
+            <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="user-name" name="user-name">
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Gustavo Fragas Cunha - Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
