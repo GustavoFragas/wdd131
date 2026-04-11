@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI powered services for individuals and companies. Find the best plan for you.">
+    <meta name="author" content="Gustavo Fragas Cunha">
+    <title>Smart Finance AI - Services</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/smartfinance.css">
+    <link rel="stylesheet" href="styles/smartfinance-large.css">
+    
+    <script src="scripts/smartfinance.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Smart Finance AI</h1>
+        </div>
+        <button id="hamburgerBtn" aria-label="Toggle Menu">&#9776;</button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="services-page">
+        <section class="services-header">
+            <h2>Our Artificial Intelligence Plans</h2>
+            <p>Choose the model and capacity that fits your business needs, or filter by your profile.</p>
+            
+            <div class="filters">
+                <button id="filterAll" class="filter-btn active">All Plans</button>
+                <button id="filterIndividual" class="filter-btn">Individuals</button>
+                <button id="filterBusiness" class="filter-btn">Business</button>
+            </div>
+        </section>
+
+        <section id="servicesContainer" class="services-grid">
+            
+        </section>
+
+        <div class="promo-banner">
+            <img src="images/Mobile.png" alt="Promo app mockup" loading="lazy" width="300" height="600">
+            <div>
+                <h3>Download our App</h3>
+                <p>Manage everything from your pocket.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Smart Finance AI | Gustavo Fragas Cunha | Brazil</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="references.html">References</a> | 
+            <a href="siteplan.html">Site Plan</a>
+        </p>
+    </footer>
+</body>
+</html>

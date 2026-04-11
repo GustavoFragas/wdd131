@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reach out to us so we can connect you to financial success using smart algorithms.">
+    <meta name="author" content="Gustavo Fragas Cunha">
+    <title>Contact Us - Smart Finance AI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/smartfinance.css">
+    <link rel="stylesheet" href="styles/smartfinance-large.css">
+    
+    <script src="scripts/smartfinance.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Smart Finance AI</h1>
+        </div>
+        <button id="hamburgerBtn" aria-label="Toggle Menu">&#9776;</button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <h2>Talk to a Human or AI</h2>
+        <p>We are ready to assist you regarding any financial planning questions.</p>
+        
+        <form action="thanks.html" method="get" class="contact-form" id="leadForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>
+                    Full Name:
+                    <input type="text" name="fname" id="fname" required>
+                </label>
+                <label>
+                    Email Address:
+                    <input type="email" name="email" id="email" required placeholder="name@domain.com">
+                </label>
+                <label>
+                    Phone:
+                    <input type="tel" name="phone" id="phone" pattern="[0-9\-]*">
+                </label>
+                <label>
+                    Date of Contact:
+                    <input type="date" name="contactDate" id="contactDate">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Need</legend>
+                <label>
+                    <input type="radio" name="account" value="individual" required>
+                    Individual Investor
+                </label>
+                <label>
+                    <input type="radio" name="account" value="company">
+                    Small Business
+                </label>
+
+                <label>
+                    Area of Interest:
+                    <select name="interest" id="interest">
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="saving">Saving Money</option>
+                        <option value="investing">Stock Investing</option>
+                        <option value="crypto">Cryptocurrencies</option>
+                        <option value="debt">Debt Management</option>
+                    </select>
+                </label>
+                <label>
+                    Message/Questions:
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Smart Finance AI | Gustavo Fragas Cunha | Brazil</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="references.html">References</a> | 
+            <a href="siteplan.html">Site Plan</a>
+        </p>
+    </footer>
+</body>
+</html>

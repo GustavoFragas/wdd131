@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI driven financial advice to save money and find investments.">
+    <meta name="author" content="Gustavo Fragas Cunha">
+    <title>Smart Finance AI - Home</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/smartfinance.css">
+    <link rel="stylesheet" href="styles/smartfinance-large.css">
+    
+    <script src="scripts/smartfinance.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Smart Finance AI</h1>
+        </div>
+        <button id="hamburgerBtn" aria-label="Toggle Menu">&#9776;</button>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <img src="images/Desktop.png" alt="Smart Finance Analysis Graphic" width="800" height="400">
+            </picture>
+            <div class="hero-text">
+                <h2>Optimize your cashflow with Artificial Intelligence</h2>
+                <p>Welcome back! You have visited this site <span id="visitCount">0</span> times.</p>
+                <a href="services.html" class="btn">Discover Our Services</a>
+            </div>
+        </div>
+
+        <section class="features">
+            <div class="card">
+                <h3>Save Money</h3>
+                <p>Use our AI algorithms to track down unnecessary expenses across your bank statements automatically.</p>
+            </div>
+            <div class="card">
+                <h3>Investment Ideas</h3>
+                <p>Get personalized stock and investment recommendations based on your risk tolerance and goals.</p>
+            </div>
+            <div class="card">
+                <h3>Business Protection</h3>
+                <p>Small businesses fail due to bad management. Let our AI handle the cash flow forecasting.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Smart Finance AI | Gustavo Fragas Cunha | Brazil</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="references.html">References</a> | 
+            <a href="siteplan.html">Site Plan</a>
+        </p>
+    </footer>
+</body>
+</html>
